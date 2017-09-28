@@ -1,0 +1,83 @@
+/**
+  Positioning
+              **/
+.bg-image,
+.big-image-small {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bg-image-small {
+  display: none;
+  min-width: 600px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg-image {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    display: none;
+  }
+  .bg-image-small {
+    display: block;
+  }
+}
+.inner-container {
+  position: relative;
+}
+
+p {
+  padding: 0px 0px;
+}
+
+i {
+  color: black;
+}
+
+.name {
+  display: inline-flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.name p {
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+
+.fa-smile-o {
+  margin-left: 0.33rem;
+  padding-top: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.spacer {
+  height: 30vh;
+  width: 100%;
+}
+
+/**
+      Style
+              **/
+
+#hello {
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+}
