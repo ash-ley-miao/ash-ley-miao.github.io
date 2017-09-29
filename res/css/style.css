@@ -1,10 +1,7 @@
-/**
-  Positioning
-              **/
 .bg-image,
 .big-image-small {
-  min-height: 100%;
-  min-width: 1024px;
+  min-height: auto;
+  min-width: 100%;
   width: 100%;
   height: auto;
   position: fixed;
@@ -17,27 +14,13 @@
   min-width: 600px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .bg-image {
-    left: 50%;
-    margin-left: -512px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .bg-image {
-    display: none;
-  }
-  .bg-image-small {
-    display: block;
-  }
-}
 .inner-container {
   position: relative;
 }
 
-p {
+.intro p {
   padding: 0px 0px;
+  margin: 0px 0px;
 }
 
 i {
@@ -57,27 +40,106 @@ i {
 
 .fa-smile-o {
   margin-left: 0.33rem;
-  padding-top: 5px;
+  padding-top: 4px;
 }
 
 .links {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 21%;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .spacer {
-  height: 30vh;
+  height: 25vh;
   width: 100%;
 }
 
-/**
-      Style
-              **/
-
-#hello {
+.hello {
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 500;
   font-size: 5rem;
+  color: #2c6b2c;
+  transition: font-weight, 0.25s, ease, 0.25s;
+  width: 5rem;
 }
+
+.intro {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+}
+
+.name,
+.about-me,
+.rectangle-spacer,
+.links {
+  margin-left: 0.3rem;
+}
+
+.major, .work, .interests {
+  margin-bottom: 1rem;
+}
+
+.rectangle-spacer {
+  border-top: 7px dotted  black;
+  width: 22%;
+  height: 0.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.links-small {
+  display: none;
+  width: 33%;
+  justify-content: space-between;
+}
+
+.hello:hover {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bg-image {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bg-image {
+    display: none;
+  }
+  body {
+    background-image: url("../images/cactus-xs.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  .hello {
+    font-size: 3rem;
+  }
+  .name, .about-me {
+    font-size: 0.7rem;
+  }
+  .rectangle-spacer {
+    width: 35%;
+  }
+  .links {
+    display: none;
+  }
+  .links-small {
+    display: inline-flex;
+    margin-left: 0.33rem;
+  }
+}
+
+/** Isn't showing up
+@media only screen and (max-width: 550px) {
+  .bg-image {
+    display: none;
+  }
+  .body-container {
+    background-image: url("../images/cactus-xs.jpg");
+  }
+}
+*/
