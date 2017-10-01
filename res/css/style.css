@@ -14,8 +14,25 @@
   min-width: 600px;
 }
 
+.inner-container-border {
+  border: 0.4rem solid rgba(255, 165, 0, 0.44);
+  position: relative;
+  width: 50%;
+  background-color: white;
+  display: flex;
+}
+
 .inner-container {
   position: relative;
+  border: 5.76px dashed rgba(0, 0, 0, 1);
+  border-right: 6px dashed rgba(0, 0, 0, 1);
+  border-top: 6.5px dashed rgba(0, 0, 0, 1);
+  width: 100%;
+  padding: 1rem 0.8rem;
+  margin-right: .7rem;
+  margin-top: .5rem;
+  background-color: rgba(250, 235, 215, 0.8);
+  box-shadow: -5px 7px 0px 9px rgb(167, 163, 161);
 }
 
 .intro p {
@@ -46,7 +63,7 @@ i {
 .links {
   display: flex;
   flex-direction: row;
-  width: 21%;
+  width: 40%;
   justify-content: space-between;
   margin-top: 1rem;
 }
@@ -58,15 +75,21 @@ i {
 
 .hello {
   font-family: 'Source Code Pro', sans-serif;
-  font-weight: 500;
-  font-size: 5rem;
+  font-weight: 600;
+  font-size: 5.5rem;
   color: #2c6b2c;
-  transition: font-weight, 0.25s, ease, 0.25s;
-  width: 5rem;
+}
+
+.hello:hover {
+  -webkit-stroke-width: 8.3px;
+      -webkit-stroke-color: black;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 5px 5px 5px white;
 }
 
 .intro {
   font-family: 'Raleway', sans-serif;
+  font-weight: 400;
   font-size: 1.1rem;
 }
 
@@ -82,28 +105,25 @@ i {
 }
 
 .rectangle-spacer {
-  border-top: 7px dotted  black;
-  width: 22%;
+  border-top: 7px dotted black;
+  width: 45%;
   height: 0.5rem;
   margin-top: 1.75rem;
   margin-bottom: 1.5rem;
 }
 
-.links-small {
-  display: none;
-  width: 33%;
-  justify-content: space-between;
+.links .fa:hover {
+  opacity: 0.75;
+  font-weight: bold;
+  transition: font-weight, 0.3s, ease-out, 0.3s;
 }
 
-.hello:hover {
-  font-weight: 700;
-}
 
 @media only screen and (max-width: 1024px) {
   .bg-image {
-    left: 50%;
-    margin-left: -512px;
-  }
+     left: 50%;
+     margin-left: -512px;
+   }
 }
 
 @media only screen and (max-width: 800px) {
@@ -116,30 +136,28 @@ i {
     background-repeat: no-repeat;
   }
   .hello {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .name, .about-me {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .rectangle-spacer {
-    width: 35%;
+    width: 75%;
+  }
+  .fa-smile-o {
+    padding-top: 2.3px;
+    margin-left: 0.22rem;
+  }
+  .links .fa {
+    font-size: 1.0rem;
+  }
+  .inner-container-border {
+    width: 60%;
+  }
+  .spacer {
+    height: 13vh;
   }
   .links {
-    display: none;
-  }
-  .links-small {
-    display: inline-flex;
-    margin-left: 0.33rem;
+    width: 75%;
   }
 }
-
-/** Isn't showing up
-@media only screen and (max-width: 550px) {
-  .bg-image {
-    display: none;
-  }
-  .body-container {
-    background-image: url("../images/cactus-xs.jpg");
-  }
-}
-*/
