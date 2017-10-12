@@ -80,13 +80,6 @@ i {
   color: #2c6b2c;
 }
 
-.hello:hover {
-  -webkit-stroke-width: 8.3px;
-      -webkit-stroke-color: black;
-      -webkit-fill-color: #FFFFFF;
-      text-shadow: 5px 5px 5px white;
-}
-
 .intro {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -119,10 +112,18 @@ i {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1300px) {
   .bg-image {
      left: 50%;
      margin-left: -512px;
+   }
+   .bg-image {
+     display: none;
+   }
+   body {
+     background-image: url("../images/cactus-sm.jpg");
+     background-size: 100% auto;
+     background-repeat: no-repeat;
    }
 }
 
@@ -139,7 +140,7 @@ i {
     font-size: 2rem;
   }
   .name, .about-me {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   .rectangle-spacer {
     width: 75%;
@@ -149,7 +150,7 @@ i {
     margin-left: 0.22rem;
   }
   .links .fa {
-    font-size: 1.0rem;
+    font-size: 1.3rem;
   }
   .inner-container-border {
     width: 60%;
