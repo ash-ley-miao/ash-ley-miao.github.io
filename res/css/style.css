@@ -125,6 +125,10 @@ i {
      background-size: 100% auto;
      background-repeat: no-repeat;
    }
+   .links
+   {
+     width: 60%;
+   }
 }
 
 @media only screen and (max-width: 800px) {
