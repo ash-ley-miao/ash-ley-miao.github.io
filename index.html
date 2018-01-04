@@ -3,67 +3,77 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Ashley Miao</title>
-  <link href="./res/css/style.css" type="text/css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="res/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
-  <link rel="icon" href="./res/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./res/css/style.css">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:300,400,600,700|Quattrocento:400,700" rel="stylesheet">
 </head>
 
 <body>
-  <div class="outer-container container-fluid">
-
-  <img src="./res/images/cactus 3.jpeg" class="bg-image"></img>
-
-    <div class="spacer"></div>
-
-  <div class="inner-container-border">
-  <div class="inner-container">
-      <div class="intro">
-        <p class="hello"> Hello! </p>
-        <div class= "name">
-          <p> my name is <strong>ashley miao</strong></p>
-          <i class="fa fa-smile-o" aria-hidden="true"> </i>
-        </div>
-        <div class="about-me">
-          <div class="major">
-            <p>i'm a 2nd year student from San Francisco at UCLA
-            majoring in <strong> linguistics &amp; computer science </strong> and
-            planning to minor in <strong>urban and regional policies</strong>.</p>
-          </div>
-          <div class="work">
-            <p> i'm constantly learning and creating.</p>
-          </div>
-          <div class="interests">
-            <p> if you like to talk about sustainability, technology,
-            social justice, food, books, or art, i'm all ears. </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="connect">
-        <div class="rectangle-spacer"></div>
-
-        <div class="links">
-          <a href="https://github.com/ash-ley-miao">
-            <i class="fa fa-github-alt fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/ashley-s-miao/">
-            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="./res/Resume.pdf">
-            <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:ashleymiao@ucla.edu">
-            <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-          </a>
-        </div>
+  <div class="container">
+    <div class="header">
+      <h4> Ashley Miao </h4>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href=".\about.html">About</a>
       </div>
     </div>
-    </div>
 
+    <p>Hello! My name is Ashley Miao <i class="fa fa-smile-o" aria-hidden="true"> </i></p>
+    <p class="that-one-sentence">I'm a 2nd year student at UCLA
+    majoring in <span class="major-link intro-link" target="_blank"><a href="http://cis.ucla.edu/studyArea/course.asp?type=MAJ&code=499"> linguistics &amp; computer science</a></span>
+    and minoring in <p><span class="minor-link intro-link" target="_blank"><a href="http://luskin.ucla.edu/admissions/inside-luskin/#toggle-id-3"> urban and regional studies</a></span>.</p>
+    <p> I'm also a student of design and technology -- and people.</p>
+    <p> If you'd like to check out my resume, <span class="resume-link intro-link"><a href=".\res\resume.pdf" target="_blank">click here</a></span>.</p>
+  </div>
+
+  <div class="container">
+    <h4>Projects</h4>
+    <div class="row">
+      <div class="col-md project">
+        <a href=".\akpsi-visual-design.html">
+          <div class="project-thumbnail">
+            <img class="thumbnail-img" src=".\res\images\akp-thumbnail-1.png">
+          </div>
+          <h5>Alpha Kappa Psi</h5>
+          <h6>Visual Design</h6>
+        </a>
+      </div>
+      <div class="col-md project">
+        <a href="#">
+          <div class="project-thumbnail">
+            <img class="thumbnail-img" src=".\res\images\bruinwalk-thumbnail.png">
+          </div>
+          <h5 class="bruinwalk">Bruinwalk - In progress</h5>
+          <h6>UI/UX</h6>
+        </a>
+      </div>
+      <div class="col-md project">
+        <a href="https://github.com/ash-ley-miao">
+        <div class="project-thumbnail">
+            <img class="thumbnail-img" src=".\res\images\web-dev-github-2.png">
+        </div>
+            <h5>Web development</h5>
+            <h6>HTML5/CSS, JavaScript</h6>
+          </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 project">
+        <a href=".\sketchbook.html">
+          <div class="project-thumbnail">
+            <img class="thumbnail-img" src=".\res\images\sketchbook-thumbnail.png">
+          </div>
+          <h5>Sketchbook</h5>
+          <h6>Pen and misc mediums</h6>
+        </a>
+      </div>
+    </div>
   </div>
 </body>
 </html>
