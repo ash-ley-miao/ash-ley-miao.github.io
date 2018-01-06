@@ -56,12 +56,19 @@ img {
 	margin-top: 3.5rem;
 	margin-bottom: 0.4rem;
 	height: 2rem;
-	align-items: center;
+}
+
+.current-page {
+	font-weight: 700;
 }
 
 .row {
 	margin-bottom: 1.5rem;
 	margin-top: 1.5rem;
+}
+
+.project {
+	margin-bottom: 1.5rem;
 }
 
 .project h5 {
@@ -83,6 +90,10 @@ a:hover {
 	font-weight: bold;
 }
 
+.links a:hover {
+	font-weight: 400;
+}
+
 a:active {
 	font-weight: bold;
 }
@@ -94,6 +105,7 @@ a:active {
 
 .akp-header {
 	margin-bottom: 4rem;
+	align-items: center;
 }
 
 .akp-header h4 {
@@ -175,37 +187,20 @@ i {
 	background-color: white;
 }
 
-.that-one-sentence {
-	margin-bottom: 0px;
-}
-
-.major-link,
-.minor-link,
-.resume-link {
-	position: relative;
-}
-
-.major-link:before,
-.minor-link:before,
-.resume-link:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 16px;
-  width: 100%;
-  z-index: -1;
-}
-
-.major-link:before {
+.major-link a {
 	border-bottom: 2px dashed #3fbfea;
 }
 
-.minor-link:before {
+.minor-link a{
 	border-bottom: 2px dashed #5abb5a;
 }
 
-.resume-link:before {
+.resume-link a {
 	border-bottom: 2px dashed #f87f7f;
+}
+
+.mail-link {
+	border-bottom: 2px dashed #3fa3be;
 }
 
 .major-link a:hover {
@@ -218,6 +213,10 @@ i {
 
 .resume-link a:hover {
 	color: #ce7979;
+}
+
+.mail-link:hover {
+	color: #3fa3be;
 }
 
 .intro-link a {
@@ -238,9 +237,54 @@ i {
 
 .prof {
 	width: 95%;
+	margin-bottom: 1.6rem;
 }
 
-footer {
-	display: flex;
-	padding-top: 3rem;
+.project-container-sm {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.container {
+		max-width: 85%;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 677px) {
+	.container .project-thumbnail {
+		height: 8rem;
+	}
+	.project h5 {
+		font-size: 1rem;
+	}
+	.project h6 {
+		font-size: 0.85rem;
+	}
+}
+
+@media only screen and (max-width: 495px) {
+	.project {
+		margin-bottom: 2rem;
+	}
+}
+
+@media only screen and (max-width: 441px) {
+	.project-container-lg {
+		display: none;
+	}
+	.project-container-sm {
+		display: block;
+	}
+	.container .project-thumbnail{
+		height: 17rem;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+	body {
+		font-size: 14px;
+	}
+	a {
+		font-size: 16px;
+	}
 }
