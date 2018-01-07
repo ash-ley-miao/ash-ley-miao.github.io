@@ -104,7 +104,6 @@ a:active {
 }
 
 .akp-header {
-	margin-bottom: 4rem;
 	align-items: center;
 }
 
@@ -118,7 +117,6 @@ a:active {
 
 .content-title,
 .content {
-	margin-top: 2rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -266,6 +264,9 @@ i {
 	.project {
 		margin-bottom: 2rem;
 	}
+	.content p {
+		line-height: 2.3rem;
+	}
 }
 
 @media only screen and (max-width: 441px) {
@@ -276,15 +277,24 @@ i {
 		display: block;
 	}
 	.container .project-thumbnail{
-		height: 17rem;
+		height: 80%;
+	}
+	h4, a {
+		font-size: 1.2rem;
+	}
+	.links {
+		justify-content: space-around;
 	}
 }
 
-@media only screen and (max-width: 395px) {
-	body {
+@media only screen and (max-width: 426px) {
+	body, a, h6 {
 		font-size: 14px;
 	}
-	a {
-		font-size: 16px;
+	.akp-header .links a {
+		font-size: 1.25rem;
+	}
+	.links a {
+		font-size: 0.85rem;
 	}
 }
