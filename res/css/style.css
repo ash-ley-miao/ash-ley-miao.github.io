@@ -9,9 +9,11 @@ h1, h2, h3, h4 {
 	font-weight: 700;
 }
 
-h5, h6,
-p,
-li {
+.content h4 {
+	font-weight: 400;
+}
+
+h5, h6, p, li {
 	font-family: 'Quattrocento', serif;
 }
 
@@ -60,7 +62,7 @@ img {
 }
 
 .current-page {
-	font-weight: 700;
+	font-weight: 900;
 }
 
 .row {
@@ -80,10 +82,16 @@ img {
 
 .project .project-thumbnail {
 	margin-bottom: 1rem;
+	overflow: hidden;
 }
 
-.thumbnail-img:hover {
-	opacity: 0.7;
+.project .project-thumbnail:hover {
+	box-shadow: 0 3px 43px 0 rgba(0, 0, 0, 0.15),
+						  0 7px 11px 0 rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail-hover-img {
+	display: flex;
 }
 
 a,
@@ -117,8 +125,21 @@ a:active {
 	font-size: 24px;
 }
 
+.spring-rush h4,
+.fall-rush h4 {
+	margin: 2rem 0rem 1.2rem 0rem;
+}
+
 .project:hover h5 {
 	font-weight: 700;
+}
+
+.overview .col-sm-4 {
+	border-right: 2px solid #cacaca;
+}
+
+.overview h3 {
+	margin-top: 3rem;
 }
 
 .content-title,
@@ -126,7 +147,6 @@ a:active {
 	margin-bottom: 1.5rem;
 }
 
-.content p,
 .content ol {
 	margin-top: 2rem;
 }
@@ -144,22 +164,12 @@ a:active {
 	margin-top: 0rem;
 }
 
-.deliverables-container .row img {
-	width: 1%;
-	height: 1%;
-}
-
 .content p {
-		line-height: 3rem;
+	line-height: 3rem;
 }
 
-.deliverable {
-	margin-bottom: 3.5rem;
-	text-align: center;
-}
-
-.table-tent {
-	width: 50%;
+.internal-link {
+	text-decoration: underline;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -172,7 +182,7 @@ a:active {
 }
 
 .home-link {
-	margin-top: 3.5rem;
+	margin: 3.5rem 0rem;;
 	text-decoration: underline;
 }
 
@@ -183,8 +193,8 @@ i {
 .container .project-thumbnail {
 	height: 10rem;
 	text-align: center;
-  box-shadow: 0 -1px 12px 0 rgba(0, 0, 0, 0.33),
- 						  0 10px 23px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 43px 0 rgba(0, 0, 0, 0.1),
+ 						  0 7px 11px 0 rgba(0, 0, 0, 0.1);
 }
 
 .thumbnail-img:hover {
